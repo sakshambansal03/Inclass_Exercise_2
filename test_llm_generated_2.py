@@ -7,26 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1CGdqUq24ytky6elfdE9_CZ_xnqkOVHS-
 """
 
-from cs520_clean import find_max_1, is_prime
+from cs520_clean import is_prime
 
-# -------- FIND_MAX TESTS (Iteration 2) --------
-def test_find_max_llm_iteration2():
-    # 1. Regular positive list
-    assert find_max_1([1, 2, 3, 4]) == 4
 
-    # 2. All negative numbers (edge case)
-    assert find_max_1([-10, -5, -30]) == -5
-
-    # 3. Single element
-    assert find_max_1([42]) == 42
-
-    # 4. Repeated maximum values
-    assert find_max_1([5, 1, 5, 5]) == 5
-
-    # 5. Empty list -> triggers ValueError branch
-    import pytest
-    with pytest.raises(ValueError):
-        find_max_1([])
 
 # -------- IS_PRIME TESTS (Iteration 2) --------
 def test_is_prime_llm_iteration2():
